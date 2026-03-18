@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"import anthropic, requests, bs4, dotenv; print\\(''all deps ok''\\)\")",
+      "Bash(ls /Users/josephnemuri/GitHub/claude/requirements*.txt)",
+      "Bash(ls /Users/josephnemuri/GitHub/claude/*.toml)",
+      "Bash(pip list:*)",
+      "Bash(/Users/josephnemuri/GitHub/claude/.venv/bin/python -c \"import anthropic, requests, bs4, dotenv; print\\(''all deps ok''\\)\")",
+      "Bash(.venv/bin/python tools/run_newsletter.py --dry-run)",
+      "mcp__claude_ai_Box__list_folder_content_by_folder_id"
+    ]
+  }
+}
