@@ -27,7 +27,7 @@ All notable changes to Capital Signal are documented here.
 
 ---
 
-## 2026-03-23 — Session 1: Pipeline Build & First Run
+## 2026-03-21 — Session 1: Pipeline Build & First Run
 
 ### Added
 - **Complete newsletter pipeline** built from scratch using WAT framework:
