@@ -126,7 +126,13 @@ def generate(
         system=SYSTEM_PROMPT,
         messages=[{"role": "user", "content": user_prompt}],
     )
-    return message.content[0].text
+    html = message.content[0].text.strip()
+    # Strip markdown code fences if Claude wraps the output
+    if html.startswith("```"):
+        html = html.split("\n", 1)[1]  # Remove opening ```html line
+    if html.endswith("```"):
+        html = html.rsplit("```", 1)[0]
+    return html.strip()
 
 
 def main():

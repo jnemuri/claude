@@ -177,16 +177,17 @@ def main():
     # ── Step 4: Post ────────────────────────────────────────
     post_id = "dry-run"
     if args.dry_run:
-        print("[4/5] Skipping Beehiiv post (--dry-run)\n")
+        print("[4/5] Skipping Buttondown post (--dry-run)\n")
     else:
-        print(f"[4/5] Posting to Beehiiv (status={args.status})...")
+        bd_status = "about_to_send" if args.status == "confirmed" else "draft"
+        print(f"[4/5] Posting to Buttondown (status={bd_status})...")
         rc = run_tool([
-            "tools/post_to_beehiiv.py",
-            "--title", title,
-            "--status", args.status,
+            "tools/post_to_buttondown.py",
+            "--subject", title,
+            "--status", bd_status,
         ])
         if rc != 0:
-            errors.append("post_to_beehiiv failed")
+            errors.append("post_to_buttondown failed")
             print("  ERROR: Post failed. Draft saved locally.\n")
         else:
             try:

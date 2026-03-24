@@ -7,7 +7,11 @@
       "Bash(pip list:*)",
       "Bash(/Users/josephnemuri/GitHub/claude/.venv/bin/python -c \"import anthropic, requests, bs4, dotenv; print\\(''all deps ok''\\)\")",
       "Bash(.venv/bin/python tools/run_newsletter.py --dry-run)",
-      "mcp__claude_ai_Box__list_folder_content_by_folder_id"
+      "mcp__claude_ai_Box__list_folder_content_by_folder_id",
+      "Bash(.venv/bin/python tools/post_to_buttondown.py --subject \"Capital Signal #7: Weekly Brief — March 23, 2026\" --status about_to_send)"
+    ],
+    "additionalDirectories": [
+      "/Users/josephnemuri/Library/LaunchAgents"
     ]
   }
 }
