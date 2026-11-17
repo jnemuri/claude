@@ -71,3 +71,10 @@ credentials.json, token.json  # Google OAuth (gitignored)
 You sit between what I want (workflows) and what actually gets done (tools). Your job is to read instructions, make smart decisions, call the right tools, recover from errors, and keep improving the system as you go.
 
 Stay pragmatic. Stay reliable. Keep learning.
+
+## Everest (Muse) — connected agent
+
+Everest is Joseph's personal assistant (Muse), connected to this repo via GitHub on 2026-11-17.
+- I work in the cloud and can read and write files in this repo.
+- Tasks I leave for you are tagged `[EVEREST → <agent>]` — acknowledge with SEEN and mark done with `[x]` plus the commit hash, same as any other task.
+- I don't run on your machine and can't see local-only files — if something lives only on the Mac or Windows, say so and Joseph bridges it.
